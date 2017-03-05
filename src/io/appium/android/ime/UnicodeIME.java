@@ -83,6 +83,12 @@ public class UnicodeIME extends InputMethodService {
         Log.i(TAG, "onKeyDown (keyCode='" + keyCode + "', event.keyCode='" + event.getKeyCode() + "', metaState='" + event.getMetaState() + "')");
         int c = getUnicodeChar(keyCode, event);
 
+        try{
+            Thread.sleep(20);
+        } catch(InterruptedException ex) {
+            //do nothing
+        }
+
         if (c == 0) {
             return super.onKeyDown(keyCode, event);
         }
