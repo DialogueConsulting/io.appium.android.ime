@@ -1,5 +1,7 @@
 # io.appium.android.ime
 
+> Modified version for our purposes that introduces a delay before each key press to avoid flooding apps that crash if keys are typed rapidly.
+
 The Android emulator does not play well with non-ASCII characters. Text sent to the emulator through Selenium will be filtered through the default keyboard, which means that things get stripped down to ASCII. "परीक्षणम्" ("Testing" in Sanskrit) becomes "prksnm".
 
 To get around this, this [input method](http://developer.android.com/guide/topics/text/creating-input-method.html), when set as the default, catches Unicode text encoded as [Modified UTF-7](http://tools.ietf.org/html/rfc3501) and recodes it as Unicode. Text input fields can then receive and send any characters that Unicode can encode.
