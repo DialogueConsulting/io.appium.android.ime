@@ -1,8 +1,8 @@
-bin
-gen
-out
+#bin
+#gen
+#out
 .settings/
-*.apk
+#*.apk
 .idea/*
 local.properties
 npm-debug.log
