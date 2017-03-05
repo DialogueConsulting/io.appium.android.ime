@@ -84,7 +84,7 @@ public class UnicodeIME extends InputMethodService {
         int c = getUnicodeChar(keyCode, event);
 
         try{
-            Thread.sleep(20);
+            Thread.sleep(60);
         } catch(InterruptedException ex) {
             //do nothing
         }
