@@ -1,6 +1,6 @@
 {
   "name": "appium-android-ime",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Android Input Manager for testing Unicode",
   "main": "index.js",
   "scripts": {
